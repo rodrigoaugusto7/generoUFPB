@@ -22,10 +22,13 @@
       <script src="https://d3js.org/d3.v4.min.js"></script>
 
 
+<!--- Tableau -->
+<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script src="lib/tableau.js"></script>
 
 	</head>
 
-	<body>
+	<body onload="initVizMap();"> <!--- Dessa forma faz a chamada depois que tudo da body carregar -->
   
 <!-- HEADER -->
       <!--<div class="ui fixed red inverted menu">-->
@@ -43,7 +46,8 @@
       <a href="mulheres.html" class="transition item"><i class="female icon"></i></a>  
       <!-- Destaques dos homens  -->   
       <a href="homens.html" class="transition item"><i class="male icon"></i></a> 
-       <a href="map.html" class="transition item"><i class="map icon"></i></a> 
+
+      <a href="map.html" class="transition item"><i class="map icon"></i></a> 
 
       <!-- Extra -->       
       <div class="ui simple dropdown item"> Extra <i class="dropdown icon"></i>
@@ -69,43 +73,13 @@
 
   <!-- Meio -->
 
-
   <!-- Container -->
   <div class="ui main text container">
-  	<h1 class="ui header">Envolvidos</h1>
-
-<div class="ui card">
-  <div class="image">
-    <img src="image/avatar/thais.jpg">
+    <h1 class="ui header">Mapa da Computação</h1>
+	 <div id="tableauVizMap"></div>
   </div>
-  <div class="content">
-    <a class="header">Thaís Gaudencio do Rêgo</a>
-    <div class="meta">
-      <span class="date">2018</span>
-    </div>
-    <div class="description">
-      Professora e coordenadora do curso de Engenharia de Computação
-    </div>
-  </div>
-</div>
 
-<div class="ui card">
-  <div class="image">
-    <img src="image/avatar/rodrigo.jpg">
-  </div>
-  <div class="content">
-    <a class="header">Rodrigo Augusto Vasconcelos Sarmento</a>
-    <div class="meta">
-      <span class="date">1994</span>
-    </div>
-    <div class="description">
-      Graduando em Engenharia de Computação
-    </div>
-  </div>
-</div>
-
-</div> <!-- Fim Container -->
-
+  </div> <!-- Fim Container -->
 
 
 
@@ -118,7 +92,7 @@
       <img src="image/ufpb_logo.png" class="ui centered mini image">
       <div class="ui horizontal inverted small divided link list">
         <a class="item" href="#">Site Map</a>
-        <a class="item" href="envolvidos.html">Contato</a>
+        <a class="item" href="envolvidos.html">Contato</a><i class="brazil flag"></i>
       </div>
     </div>
   </div> <!-- Fim Container -->
