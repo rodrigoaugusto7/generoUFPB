@@ -24,10 +24,14 @@
       <!-- D3 -->
       <script src="https://d3js.org/d3.v4.min.js"></script>
 
+      <!--- Tableau -->
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="lib/tableau.js"></script>
 
   </head>
     
-
+  <body onload="initVizEvasao();"> <!--- Dessa forma faz a chamada depois que tudo da body carregar -->
+  
 <!-- HEADER -->
       <!--<div class="ui fixed red inverted menu">-->
       <div class="ui stackable container menu">
@@ -69,18 +73,12 @@
       </div> <!-- Fecha MENU -->
 
     <!-- MEIO -->
-
     <!-- Container -->
-    <div class="ui main text container" id="grafico" style="width:100%; height:400px;">
+    <div class="ui main text container">
       <h1 class="ui header">Gráficos</h1>
-
-      <a href="https://plot.ly/~7RodrigoAugusto/0/?share_key=NIOiI47kaBZJu7VofCmx8f" target="_blank" title="grouped-bar" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/0.png?share_key=NIOiI47kaBZJu7VofCmx8f" alt="grouped-bar" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:0" sharekey-plotly="NIOiI47kaBZJu7VofCmx8f" src="https://plot.ly/embed.js" async></script>      
-
-      
+        <div id="tableauVizEvasao"></div>
       </div> <!-- Fim Container-->
-
-          
+   
 
   <!-- FOOTER -->
   <!-- Container -->
