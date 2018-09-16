@@ -1,128 +1,28 @@
-  <html>
-  <head>
-    <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title> Projeto </title>
-    
-<!-- Link direto para meu projeto no github -->
-    <link rel="stylesheet" type="text/css" href="lib/semantic/out/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    
-<!--- Semantic -->
-      <script src="lib/semantic/out/semantic.min.js"></script>
-
-<!--- D3 -->
-      <script src="https://d3js.org/d3.v4.min.js"></script>
-
-<!-- HEADER -->
-      <!--<div class="ui fixed red inverted menu">-->
-      <div class="ui stackable container menu">
+function initViz() {
+    var containerDiv = document.getElementById("tableauViz"),
+    url = "https://public.tableau.com/shared/5H3TG86K4?:display_count=yes";
         
-        <!-- Imagem -->
-        <div class="item">
-            <a href="http://www.ufpb.br" class="ui mini image"><img src="image/ufpb_logo.png"></a>
-          </div><!-- Fim imagem -->
+    var viz = new tableau.Viz(containerDiv, url); 
+}
 
-      <a href="index.html" class="item">Página Inicial</a>
-      <!-- Destaques da pesquisa -->
-      <a href="graficos.html" class="transition item"><i class="area chart icon"></i></a>
-      <!-- Destaques dos mulheres--> 
-      <a href="mulheres.html" class="transition item"><i class="female icon"></i></a>  
-      <!-- Destaques dos homens  -->   
-      <a href="homens.html" class="transition item"><i class="male icon"></i></a> 
-       <a href="map.html" class="transition item"><i class="map icon"></i></a> 
-
-      <!-- Extra -->       
-      <div class="ui simple dropdown item"> Extra <i class="dropdown icon"></i>
-        <div class="menu">
-          <a class="item" href="#">Universidade</a>
-          <a class="item" href="#">Centro de Informática</a>
-          <div class="divider"></div>
-            <div class="header">Mulheres na Pesquisa</div>
-            <div class="item">
-            <i class="dropdown icon"></i>
-            Sub Menu
-            <div class="menu">
-              <a class="item" href="#">Pesquisadoras Centro de Informática</a>
-              <a class="transition item" href="historia.html">História</a>
-            </div>
-            </div>
-            <!-- Alunos envolvidos na pesquisa  -->
-            <a class="transition item" href="envolvidos.html">Envolvidos</a>            
-          </div>
-      </div> <!-- Fim extra -->
-
-      </div> <!-- Fecha MENU -->
-
-  <!-- MEIO -->
-
-  <div class="ui main text container">
-    <h1 class="ui header">Mulheres</h1>
-
-    <!-- Informacao -->
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/77/?share_key=cf0NmEc9ztamZUvQX8fGFN" target="_blank" title="Mulheres 2015" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/77.png?share_key=cf0NmEc9ztamZUvQX8fGFN" alt="Mulheres 2015" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:77" sharekey-plotly="cf0NmEc9ztamZUvQX8fGFN" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/75/?share_key=svq6ANzM5wxStFVOea2I6g" target="_blank" title="Mulheres 2014" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/75.png?share_key=svq6ANzM5wxStFVOea2I6g" alt="Mulheres 2014" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:75" sharekey-plotly="svq6ANzM5wxStFVOea2I6g" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/73/?share_key=heO2Yvey9mHYi4gaZMHe7s" target="_blank" title="Mulheres 2013" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/73.png?share_key=heO2Yvey9mHYi4gaZMHe7s" alt="Mulheres 2013" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:73" sharekey-plotly="heO2Yvey9mHYi4gaZMHe7s" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/71/?share_key=WoDYliFHW2mE7YAF30rOsL" target="_blank" title="Mulheres 2012" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/71.png?share_key=WoDYliFHW2mE7YAF30rOsL" alt="Mulheres 2012" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:71" sharekey-plotly="WoDYliFHW2mE7YAF30rOsL" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/69/?share_key=goaFHEyw5swZFW2gOZslhY" target="_blank" title="Mulheres 2011" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/69.png?share_key=goaFHEyw5swZFW2gOZslhY" alt="Mulheres 2011" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:69" sharekey-plotly="goaFHEyw5swZFW2gOZslhY" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/67/?share_key=OpVjG251s5XpQNewGRvRI1" target="_blank" title="Mulheres 2010" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/67.png?share_key=OpVjG251s5XpQNewGRvRI1" alt="Mulheres 2010" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:67" sharekey-plotly="OpVjG251s5XpQNewGRvRI1" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/65/?share_key=zbWfcqZga4f4yElbM6teKZ" target="_blank" title="Mulheres 2009" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/65.png?share_key=zbWfcqZga4f4yElbM6teKZ" alt="Mulheres 2009" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:65" sharekey-plotly="zbWfcqZga4f4yElbM6teKZ" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/63/?share_key=MxVxNTw9U46Dmp66O1Vx4U" target="_blank" title="Mulheres 2008" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/63.png?share_key=MxVxNTw9U46Dmp66O1Vx4U" alt="Mulheres 2008" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:63" sharekey-plotly="MxVxNTw9U46Dmp66O1Vx4U" src="https://plot.ly/embed.js" async></script>
-</div>
-<div>
-    <a href="https://plot.ly/~7RodrigoAugusto/61/?share_key=QpCj4JnIRwy6rpaDsETTzK" target="_blank" title="Mulheres 2007" style="display: block; text-align: center;"><img src="https://plot.ly/~7RodrigoAugusto/61.png?share_key=QpCj4JnIRwy6rpaDsETTzK" alt="Mulheres 2007" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="7RodrigoAugusto:61" sharekey-plotly="QpCj4JnIRwy6rpaDsETTzK" src="https://plot.ly/embed.js" async></script>
-</div>
+function initVizMap() {
+    var containerDiv = document.getElementById("tableauVizMap"),
+    url = "https://public.tableau.com/views/MapaCompleto/Dashboard1?:embed=y&:display_count=yes&publish=yes";
+        
+    var viz = new tableau.Viz(containerDiv, url); 
+}
 
 
+function initVizEvasao() {
+    var containerDiv = document.getElementById("tableauVizEvasao"),
+    url = "https://public.tableau.com/views/EvasoCCMC/Dashboard1?:embed=y&:display_count=yes&publish=yes";
+ 
+    var viz = new tableau.Viz(containerDiv, url); 
+}
 
-  </div> <!--Fim container-->
-
-
-  <!-- FOOTER -->
-
-  <!-- Container -->
-   <div class="ui inverted white vertical footer segment">
-    <div class="ui center aligned container">
-      <div class="ui inverted section divider"></div>
-      <img src="image/ufpb_logo.png" class="ui centered mini image">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="#">Site Map</a>
-        <a class="item" href="envolvidos.html">Contato</a>
-      </div>
-    </div>
-  </div> <!-- Fim Container -->
-
-  </body>
-</html>
-
-	
+function initVizParticipa() {
+    var containerDiv = document.getElementById("tableauVizParticipa"),
+    url = "https://public.tableau.com/views/ParticipaoFeminina/Dashboard1?:embed=y&:display_count=yes&publish=yes";
+ 
+    var viz = new tableau.Viz(containerDiv, url); 
+}
