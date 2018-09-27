@@ -27,7 +27,7 @@
 
 </head>
 
-<body onload="initVizDesempenhoDisciplina();"> <!--- Dessa forma faz a chamada depois que tudo da body carregar -->
+<body onload="initVizDesempenho();"> <!--- Dessa forma faz a chamada depois que tudo da body carregar -->
 
 <!-- HEADER -->
       <!--<div class="ui fixed red inverted menu">-->
@@ -72,10 +72,19 @@
   <!-- MEIO -->
 
   <div class="ui main text container">
+    <h1 class="ui header">Fluxograma - Gênero Feminino</h1>
+    <!-- Informacao -->
+    <div id="tableauVizFluxogramaFemininoDesempenho" style="height:800px; width:800px"></div>
+    
+    <h1 class="ui header">Fluxograma - Gênero Masculino</h1>
+    <!-- Informacao -->
+    <div id="tableauVizFluxogramaMasculinoDesempenho" style="height:700px; width:800px"></div>
+    
     <h1 class="ui header">Desempenho</h1>
     Abaixo temos um gráfico interativo que apresenta o desempenho por gênero, curso, disciplina e situação. 
     <!-- Informacao -->
-    <div id="tableauVizDesempenhoDisciplina" style="height:1200px; width:1200px"></div>
+    <div id="tableauVizDesempenhoDisciplina" style="height:1300px; width:800px"></div>
+    
   </div> <!--Fim container-->
 
 
@@ -95,4 +104,4 @@
   </body>
 </html>
 
-  
+	
