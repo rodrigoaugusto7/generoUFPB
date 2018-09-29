@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title> Projeto </title>
+    
+<!-- Link direto para meu projeto no github -->
+    <link rel="stylesheet" type="text/css" href="lib/semantic/out/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+
+    
+<!--- Semantic -->
+      <script src="lib/semantic/out/semantic.min.js"></script>
+    
+<!--- D3 -->
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<!--- Tableau -->
+<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script src="lib/tableau.js"></script>
+
+</head>
+  
+<body onload="initVizIndexMobile();">
+  <!-- HEADER -->
+  <!--<div class="ui fixed red inverted menu">-->
+    <div class="ui stackable container menu"> <!-- Inicia menu -->
+      <!-- Imagem -->
+      <div class="item">
+          <a href="http://www.ufpb.br" class="ui mini image"><img src="image/ufpb_logo.png"></a>
+      </div><!-- Fim imagem -->
+
+        <a href="index.html" class="item" style="color: #222831;">Página Inicial</a>
+        <a href="evasao.html" class="transition item" style="color: #222831;"> Evasão <i class="exclamation circle icon"></i></a>
+        <a href="participa.html" class="transition item" style="color: #222831;"> Participação <i class="users icon"></i></a>  
+        <a href="desempenho.html" class="transition item" style="color: #222831;"> Desempenho <i class="trophy icon"></i></a> 
+        <a href="mapa.html" class="transition item" style="color: #222831;"> Mapa <i class="map icon"></i></a> 
+
+        <!-- Extra -->       
+        <div class="ui simple dropdown item" style="color: #222831;"> Extra <i class="dropdown icon"></i>
+          <div class="menu">
+              <div class="header" style="color: #222831;">Links Importantes</div>
+              <a class="item" href="www.ufpb.br" style="color: #222831;">Universidade</a>
+              <a class="item" href="http://ci.ufpb.br/" style="color: #222831;">Centro de Informática</a>
+              <!-- Alunos envolvidos na pesquisa  -->
+              <a class="transition item" href="envolvidos.html" style="color: #222831;">Envolvidos</a>            
+            </div>
+        </div> <!-- Fim extra -->
+
+    </div> <!-- Fecha menu -->
+
+  <!-- Meio -->
+  <div class="ui main text container"> <!-- Abre container principal -->
+      <h1 class="ui header" style="color:#222831;" >Gênero UFPB</h1>
+      <!-- Informacao -->
+      <div class="ui grid" style="color:#222831;">
+        <div class="seven wide column">
+          <p>Problemas relacionados a gênero afetam instituições que são base para a sociedade, como universidades e empresas, pensando nisso, e tendo em vista a importância da universidade como modelo social, é apresentado aqui um trabalho que apresenta visualizações gráficas sobre as discrepâncias de gênero dentro de uma dessas instituições, a Universidade Federal da Paraíba (UFPB), mais especificamente nos cursos do centro de informática (CI), Engenharia de Computação, Matemática Computacional e Ciência da Computação, entre os períodos acadêmicos que vão de 2000.1 e 2017.1.
+        </p>
+        </div>
+        <div class="one wide column">
+        </div>
+        <div class="seven wide column" id="tableauVizParticipaTotal">
+        </div>
+        
+    </div>
+    </div>
+
+  </div> <!-- Fecha container principal -->
+
+
+  <!-- FOOTER -->
+  <div class="ui inverted vertical footer segment"> <!-- Abre container footer -->
+    <div class="ui center aligned container">
+          <div class="ui inverted section divider"></div>
+          <img src="image/ufpb_logo.png" class="ui centered mini image">
+          <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#"style = "color:fffdf6;">Site Map</a>
+            <a class="item" href="envolvidos.html" style = "color:fffdf6;">Contato</a><i></i>
+          </div>
+      </div>
+  </div> <!-- Fecha container footer -->
+</body>
+</html>
