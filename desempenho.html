@@ -52,7 +52,72 @@
     <!-- Desempenho-->
     
     <h1 class="ui header">Desempenho</h1> 
-    Segue a visualização gráfica de dados relacionados às disciplinas ministradas para alunos do centro de informática. As ilustrações representam a participação, a média e resultado por gênero.
+        O tema desempenho apresenta 2 blocos de aplicações. O primeiro é um espaço interativo para 
+    análise de informações diversas sobre as disciplinas e o desempenho dos discentes. Já o segundo
+    conta com a apresentação de fluxogramas interativos dos cursos do Centro de Informática.
+    
+    <table class="ui celled padded table">
+  <thead>
+    <tr><th class="single line">Dashboard</th>
+    <th>Tópico</th>
+    <th>Filtros</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h2 class="ui center aligned header">1ª</h2>
+      </td>
+      <td class="single line">
+        Série temporal do percentual de participação por disciplina
+      </td>
+      <td class="right aligned">
+       Curso <br>
+        Disciplina
+      </td>
+     </tr>
+    
+    <tr>
+      <td>
+        <h2 class="ui center aligned header">2ª</h2>
+      </td>
+      <td class="single line">
+        Série temporal da média das notas <br> considerando as situações aprovado e reprovado
+        </td>
+      <td class="right aligned">
+        Curso <br>
+        Disciplina
+      </td>
+     </tr>
+     
+      <tr>
+      <td>
+        <h2 class="ui center aligned header">3ª</h2>
+      </td>
+      <td class="single line">
+        Série temporal do percentual de aprovação considerando <br> as situações: Aprovado, Reprovado, Reprovado por falta e Trancado
+      </td>
+      <td class="right aligned">
+         Curso <br>
+         Disciplina
+      </td>
+     </tr>
+     
+     <tr>
+      <td>
+        <h2 class="ui center aligned header">4ª</h2>
+      </td>
+      <td class="single line">
+        Percentual de participação e percentuais de <br> aprovação, dispensa, reprovação por falta, reprovação e trancamento
+      </td>
+      <td class="right aligned">
+        Curso <br>
+        Disciplina <br>
+        Período
+      </td>
+     </tr>
+    
+  </tbody>
+</table>
 
     <!-- Informacao -->
     <div id="tableauVizDesempenhoDisciplina" style="height:820px; width:820px"></div>
@@ -62,25 +127,13 @@
     Mapa de calor, do fluxograma, dos cursos, do centro de informática, com a porcentagem de aprovação, reprovação, reprovação por falta, dispensa e trancamento em cada disciplina ao longo dos períodos.
 
     <!-- Engenharia da Computação -->
-    <h1 class="ui header">Engenharia da Computação</h1>
-    <h2 class="ui header">Gênero Feminino</h2>
-    <div id="tableauVizFluxogramaFemininoEC" style="height:820px; width:820px"></div>
-    <h2 class="ui header">Gênero Masculino</h2>
-    <div id="tableauVizFluxogramaMasculinoEC" style="height:820px; width:820px"></div>
+    <div id="tableauVizFluxogramaEC" style="height:820px; width:820px"></div>
     
     <!-- Ciência da Computação -->
-    <h1 class="ui header"> Ciência da Computação</h1>
-    <h2 class="ui header">Gênero Feminino</h2>
-    <div id="tableauVizFluxogramaFemininoCC" style="height:820px; width:820px"></div>
-    <h2 class="ui header">Gênero Masculino</h2>
-    <div id="tableauVizFluxogramaMasculinoCC" style="height:820px; width:820px"></div>
+    <div id="tableauVizFluxogramaCC" style="height:820px; width:820px"></div>
     
     <!-- Matemática Computacional -->
-    <h1 class="ui header"> Matemática Computacional</h1>
-    <h2 class="ui header">Gênero Feminino</h2>
-    <div id="tableauVizFluxogramaFemininoMC" style="height:820px; width:820px"></div>
-    <h2 class="ui header">Gênero Masculino</h2>
-    <div id="tableauVizFluxogramaMasculinoMC" style="height:820px; width:820px"></div>
+    <div id="tableauVizFluxogramaMC" style="height:820px; width:820px"></div>
     
     
   </div> <!--Fim container-->
